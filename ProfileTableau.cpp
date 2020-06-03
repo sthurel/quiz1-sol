@@ -108,27 +108,25 @@ int *ProfileTableau::indicesPlusUtilises( void )
     // placez votre code ici.
     	int Case	= 0;
 	int S_Tab	= 0;
-	int S_Array	= taille();
 	int Position	= 0;
 	int* Tab;
+	int S_Array	= taille();
 
 	double NbrAccArray;
     	double Moy	= nbrAccesMoyen();
 	double ecart_T	= ecartType();
 	double SommeAcc	= ecart_T + Moy;
 
-	for (Case; Case < S_Array; Case++)
+	for (Case = 0; Case < S_Array; Case++)
 	{
 		NbrAccArray = nbrAcces(Case);
 		if (NbrAccArray >= SommeAcc)
 		{
-			S_Tab = Case + 1; 
+			S_Tab = S_Tab + 1; 
 		}				
 	}
 	S_Tab += 1;
 	Tab = new int [S_Tab];
-
-
 
 	for (Case = 0; Case < S_Array; Case++)
 	{
@@ -137,10 +135,9 @@ int *ProfileTableau::indicesPlusUtilises( void )
 		{
 			Tab [Position] = Case;
 			Position++;
-		}	
-	}
+		}
 	Tab [S_Tab - 1] = -1;
+	}
 
-		
 	return Tab;
 }

@@ -177,7 +177,7 @@ public :
 	 *
 	 *   placez votre analyse ici
 	 *
-     * @author : placez votre nom et code permanent ici.
+     * @author : Sephora Thurel THUS15609305.
 	 */
 	int * indicesPlusUtilises( void );
 };
