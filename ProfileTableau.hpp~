@@ -173,11 +173,83 @@ public :
 	 * Les autres case vont contenir les indices des cases selectionnees.
 	 * S'il n'y a pas de case selectionnee, alors le tableau de retour
 	 * va contenir une seule case avec la valeur -1.
-     *
 	 *
 	 *   placez votre analyse ici
 	 *
-     * @author : Sephora Thurel THUS15609305.
+	 *   Pour ./pTri -s x:
+	 *   
+	 *   ./pTri -s 10
+	 *   moyenne : 10.6
+	 *   ecart type : 4.36348
+	 *   indices les plus utilises : 7, 8						
+	 *
+	 *   Donne 2 valeurs sequentielles.
+	 *  
+	 *   
+	 *   ./pTri -s 50
+	 *   moyenne : 31.98
+	 *   ecart type : 16.342
+	 *   indices les plus utilises : 28, 38, 40, 41, 43, 44, 45, 46, 47, 48, 49		
+	 *
+	 *   Donne 2 valeurs seules, 2 valeurs sequentielles, les autres sequentielles.
+	 *  
+	 *
+	 *   ./pTri -s 100
+	 *   moyenne : 57.25
+	 *   ecart type : 30.6021									
+	 *   indices les plus utilises : 79, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99
+	 *
+	 *   Donnne 1 valeur seule, les autres sequentielles.
+	 *   
+	 *
+ 	 *   ./pTri -s 500	
+	 *   moyenne : 259.02
+	 *   ecart type : 146.115							
+	 *   indices les plus utilises : 387, 391, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499
+	 *
+	 *   Donne 2 valeurs seules, les autres sequentielles.
+	 *
+	 *   Pour les ./pTri -s on observe que les indices representent les dernieres cases. Plus on augmente la valeur, plus le nombre d'elements augmente.
+	 *
+	 *
+	 *   Pour ./pTri -b x:
+ 	 *
+	 *   ./pTri -b 10
+	 *   moyenne : 23.7
+	 *   ecart type : 9.98048
+	 *   indices les plus utilises : 2, 3
+	 *
+	 *   Donne 2 valeurs sequentielles.
+	 *
+	 *
+	 *   ./pTri -b 50
+	 *   moyenne : 92.3
+	 *   ecart type : 38.0433
+	 *   indices les plus utilises : 10, 11, 12, 13, 14, 15, 16
+	 *
+	 *   Donne des valeurs sequentielles.
+         *
+	 * 
+	 *   ./pTri -b 100
+	 *   moyenne : 192.35
+	 *   ecart type : 76.5107
+	 *   indices les plus utilises : 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36
+ 	 *
+	 *   Donne des valeurs sequentielles.
+	 *
+	 *
+	 *   ./pTri -b 500
+	 *   moyenne : 983.818
+	 *   ecart type : 416.917
+	 *   indices les plus utilises : 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 122, 123, 124, 125, 126, 127, 132, 133, 134, 135, 136, 137, 138
+	 *
+	 *   Donne des valeurs sequentielles.
+	 *
+	 *   Pour les ./pTri -b on observe que les indices representent les premieres cases. Plus on augmente la valeue, plus le nombre d'elements augmente. 
+	 *
+ 	 *
+	 *
+ 	 * @author : Sephora Thurel THUS15609305.
 	 */
 	int * indicesPlusUtilises( void );
 };
